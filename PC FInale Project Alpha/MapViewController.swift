@@ -10,14 +10,17 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var map: MKMapView!
     var locationManager = CLLocationManager()
+    var user_delta = 0.05
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+       // var delta = user_delta
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         
@@ -75,32 +78,31 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print(locations)
-        var filePath = NSBundle.mainBundle().pathForResource("rows", ofType: "json")
-        var data =  NSData(contentsOfFile: filePath!)
+        let filePath = NSBundle.mainBundle().pathForResource("rows", ofType: "json")
+        let data =  NSData(contentsOfFile: filePath!)
         //print(data)
-        
         let json = JSON(data: data!)
         var actualData = json["data"]
+
         
-        var userLocation:CLLocation = locations[0] as! CLLocation
-        var userLatitude = userLocation.coordinate.latitude
-        var userLongitude = userLocation.coordinate.longitude
+        let userLocation:CLLocation = locations[0] as! CLLocation
+        let userLatitude = userLocation.coordinate.latitude
+        let userLongitude = userLocation.coordinate.longitude
         self.locationManager.stopUpdatingLocation()
         
         for dataPoint in 0...actualData.count {
             
-            var dataPointOne = actualData[dataPoint]
-            var lat:Double = actualData[dataPoint][14].doubleValue
+            let lat = actualData[dataPoint][14].doubleValue
             let latitude:CLLocationDegrees = lat
-            var long:Double = actualData[dataPoint][15].doubleValue
+            let long = actualData[dataPoint][15].doubleValue
             let longitude:CLLocationDegrees = long
             
-            if abs(userLongitude-longitude) <= 0.05 && abs(userLatitude-latitude) <= 0.05{
+            if abs(userLongitude-longitude) <= user_delta && abs(userLatitude-latitude) <= user_delta{
                 let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude,longitude)
                 let span = MKCoordinateSpanMake(0.1,0.1)
                 let region = MKCoordinateRegionMake(coordinate,span)
                 map.setRegion(region, animated: true)
-                var annotation = MKPointAnnotation()
+                let annotation = MKPointAnnotation()
                 annotation.coordinate = coordinate
                 map.addAnnotation(annotation)
             }

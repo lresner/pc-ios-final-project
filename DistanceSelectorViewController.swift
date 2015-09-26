@@ -10,10 +10,15 @@ import UIKit
 
 class DistanceSelectorViewController: UIViewController {
 
+    @IBOutlet weak var myImage: UIImageView!
+    @IBOutlet weak var textDelta: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        myImage.alpha = 0.6
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +27,23 @@ class DistanceSelectorViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showMapSegue"{
+            let mapViewController = segue.destinationViewController as! MapViewController
+            if let num = Double(textDelta.text!) {
+                mapViewController.user_delta = num }
+//            else {
+//                
+//                let alertController = UIAlertController(title: "Error", message: "Please actually put a number in", preferredStyle: UIAlertControllerStyle.Alert)
+//                self.presentViewController(alertController, animated: true, completion: nil)
+//            }
+            
+                    //user_delta = Double(textDelta.text!)
+        }
     }
-    */
+    
+    
+    
+    
 
 }

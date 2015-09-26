@@ -10,9 +10,10 @@
 		1B757C9D1BB48ABB00744ACE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B757C9C1BB48ABA00744ACE /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
 		1B757C9F1BB4BA2A00744ACE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B757C9E1BB4BA2A00744ACE /* CoreLocation.framework */; };
 		1B757CA11BB4F99300744ACE /* DistanceSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B757CA01BB4F99300744ACE /* DistanceSelectorViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1B757CA31BB5A79600744ACE /* 4803549-man-with-laptop-outside-working-Stock-Photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B757CA21BB5A79600744ACE /* 4803549-man-with-laptop-outside-working-Stock-Photo.jpg */; settings = {ASSET_TAGS = (); }; };
 		D80D2EB01BB1DE30001F600D /* rows.json in Resources */ = {isa = PBXBuildFile; fileRef = D80D2EAF1BB1DE30001F600D /* rows.json */; };
 		D858CB221BB1DB7B00C455AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D858CB211BB1DB7B00C455AD /* AppDelegate.swift */; };
-		D858CB241BB1DB7B00C455AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D858CB231BB1DB7B00C455AD /* ViewController.swift */; };
+		D858CB241BB1DB7B00C455AD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D858CB231BB1DB7B00C455AD /* MapViewController.swift */; };
 		D858CB271BB1DB7B00C455AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D858CB251BB1DB7B00C455AD /* Main.storyboard */; };
 		D858CB291BB1DB7B00C455AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D858CB281BB1DB7B00C455AD /* Assets.xcassets */; };
 		D858CB2C1BB1DB7B00C455AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D858CB2A1BB1DB7B00C455AD /* LaunchScreen.storyboard */; };
@@ -22,10 +23,11 @@
 		1B757C9C1BB48ABA00744ACE /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		1B757C9E1BB4BA2A00744ACE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1B757CA01BB4F99300744ACE /* DistanceSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DistanceSelectorViewController.swift; path = ../DistanceSelectorViewController.swift; sourceTree = "<group>"; };
+		1B757CA21BB5A79600744ACE /* 4803549-man-with-laptop-outside-working-Stock-Photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "4803549-man-with-laptop-outside-working-Stock-Photo.jpg"; sourceTree = "<group>"; };
 		D80D2EAF1BB1DE30001F600D /* rows.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rows.json; sourceTree = "<group>"; };
 		D858CB1E1BB1DB7B00C455AD /* PC FInale Project Alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PC FInale Project Alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D858CB211BB1DB7B00C455AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D858CB231BB1DB7B00C455AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D858CB231BB1DB7B00C455AD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D858CB261BB1DB7B00C455AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D858CB281BB1DB7B00C455AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D858CB2B1BB1DB7B00C455AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,11 +68,12 @@
 			children = (
 				D858CB211BB1DB7B00C455AD /* AppDelegate.swift */,
 				1B757CA01BB4F99300744ACE /* DistanceSelectorViewController.swift */,
-				D858CB231BB1DB7B00C455AD /* ViewController.swift */,
+				D858CB231BB1DB7B00C455AD /* MapViewController.swift */,
 				D858CB251BB1DB7B00C455AD /* Main.storyboard */,
 				D80D2EAF1BB1DE30001F600D /* rows.json */,
 				1B757C9C1BB48ABA00744ACE /* SwiftyJSON.swift */,
 				D858CB281BB1DB7B00C455AD /* Assets.xcassets */,
+				1B757CA21BB5A79600744ACE /* 4803549-man-with-laptop-outside-working-Stock-Photo.jpg */,
 				D858CB2A1BB1DB7B00C455AD /* LaunchScreen.storyboard */,
 				D858CB2D1BB1DB7B00C455AD /* Info.plist */,
 			);
@@ -137,6 +140,7 @@
 			files = (
 				D80D2EB01BB1DE30001F600D /* rows.json in Resources */,
 				D858CB2C1BB1DB7B00C455AD /* LaunchScreen.storyboard in Resources */,
+				1B757CA31BB5A79600744ACE /* 4803549-man-with-laptop-outside-working-Stock-Photo.jpg in Resources */,
 				D858CB291BB1DB7B00C455AD /* Assets.xcassets in Resources */,
 				D858CB271BB1DB7B00C455AD /* Main.storyboard in Resources */,
 			);
@@ -150,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B757C9D1BB48ABB00744ACE /* SwiftyJSON.swift in Sources */,
-				D858CB241BB1DB7B00C455AD /* ViewController.swift in Sources */,
+				D858CB241BB1DB7B00C455AD /* MapViewController.swift in Sources */,
 				1B757CA11BB4F99300744ACE /* DistanceSelectorViewController.swift in Sources */,
 				D858CB221BB1DB7B00C455AD /* AppDelegate.swift in Sources */,
 			);
