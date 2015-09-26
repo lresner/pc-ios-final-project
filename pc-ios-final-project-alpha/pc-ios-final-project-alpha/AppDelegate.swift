@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  PC FInale Project Alpha
+//  pc-ios-final-project-alpha
 //
-//  Created by Joe Burgess on 9/22/15.
-//  Copyright © 2015 Joe Burgess. All rights reserved.
+//  Created by Mark Murray on 9/26/15.
+//  Copyright © 2015 Mark Murray. All rights reserved.
 //
 
 import UIKit

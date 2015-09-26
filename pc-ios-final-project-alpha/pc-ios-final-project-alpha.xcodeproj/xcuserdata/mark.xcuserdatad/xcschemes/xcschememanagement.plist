@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>PC FInale Project Alpha.xcscheme</key>
+		<key>pc-ios-final-project-alpha.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D858CB1D1BB1DB7B00C455AD</key>
+		<key>4D83B3C71BB73F9D00A36DC8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D83B3DB1BB73F9D00A36DC8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D83B3E61BB73F9D00A36DC8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
