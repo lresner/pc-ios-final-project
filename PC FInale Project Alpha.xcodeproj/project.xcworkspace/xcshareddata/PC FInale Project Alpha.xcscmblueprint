@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CB5945D879A4A9F5524CF7E32545959B5B4FC9C0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CB5945D879A4A9F5524CF7E32545959B5B4FC9C0" : 0,
+    "E3B1586E00A59C740B787BFDB079482D1924E116" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E812BFD6-40F0-4661-92D6-29406FF67895",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CB5945D879A4A9F5524CF7E32545959B5B4FC9C0" : "PC%20FInale%20Project%20Alpha\/",
+    "E3B1586E00A59C740B787BFDB079482D1924E116" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PC FInale Project Alpha",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PC FInale Project Alpha.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lresner\/pc-ios-final-project.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CB5945D879A4A9F5524CF7E32545959B5B4FC9C0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lresner\/pc-ios-final-project.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E3B1586E00A59C740B787BFDB079482D1924E116"
+    }
+  ]
+}
